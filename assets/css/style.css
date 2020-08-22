@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    background-color: #100e17;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    min-height: 100vh;
+    width: 250px;
+}
+
+#nav-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+#nav-brand > img {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    border-radius: 50%;
+}
+
+#nav-links {
+    flex-grow: 2;
+}
+
+#nav-links > a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 8px 0px;
+}
+
+footer > p {
+    text-align: center;
+}
+
+#social-links-footer > a {
+    margin: .50rem .20rem;
+    font-size: 1.15rem;
+}
+
+main {
+    /**/
+    font-weight: 500;
+    margin-left: 260px;
+}
+
+#etiquette, #about-me, #resume, #certificates, #projects, #contact-me {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    border: 1px solid #222222;
+}
+
+#etiquette {
+    font-size: 1.5rem;
+}
+
+#etiquette img {
+    height: 250px;
+    border-radius: 50%;
+}
+
+#social-links > a {
+    font-size: 2rem;
+    margin: 0rem .25rem;
+}
+
+#about-me {
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+}
+
+#about-me > img {
+    width: 30%;
+    border-radius: 5%;
+}
+
+#about-me-text-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#about-me-text-wrapper > p:first-child {
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #bb2222;
+    border-radius: 15px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+/* #resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+#education, #experiences {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    min-width: 75%;
+}
+
+.education-entries, .experience-entries {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.education-entry, .experience-entry {
+    background-color: rgba(178, 34, 34,.4);
+    color: #f3f3f3;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    margin: .6rem;
+}
+
+.education-entry > .education-entry-college, .experience-entry > .experience-entry-title {
+    font-size: 1.65rem;
+    
+}
+
+.education-entry > .education-entry-department, .experience-entry > .experience-entry-place {
+    font-size: 1.25rem;
+    color: #d1d1d1;
+}
+
+.education-entry > .education-entry-date, .experience-entry > .experience-entry-date {
+    font-size: 0.95rem;
+    color: #b1b1b1;
+}
+
+#certificates {
+    padding: 10px;
+}
+#certificates > table {
+    width: 100%;
+}
+#certificates > table tr, 
+#certificates > table tr > td {
+    padding: 7px;
+    border:  1px dashed rgba(16, 14, 45, 1);
+    text-align: center;
+}
+
+.certificate-image {
+    height: 65px;
+}
+
+#contact-me{
+    font-size: 2rem;
+}
+#contacts > a{
+    font-size: 2rem;
+}
+
+/* animations */
+
+/* Taken from http://preview.themeforest.net/item/mugi-personal-portfolio-resume-wordpress-theme/full_screen_preview/23249443?clickid=2fiyV539NxyORHlwUx0Mo3EUUkiyS90ECU81Qs0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=369282&mp_value1=&utm_campaign=af_impact_radius_369282&utm_medium=affiliate&utm_source=impact_radius*/
+
+@keyframes ani-mouse {
+    0% {
+        top: 29%
+    }
+    15% {
+        top: 50%
+    }
+    50% {
+        top: 50%
+    }
+    100% {
+        top: 29%
+    }
+}
+
+@-webkit-keyframes ani-mouse {
+    0% {
+        top: 29%
+    }
+    15% {
+        top: 50%
+    }
+    50% {
+        top: 50%
+    }
+    100% {
+        top: 29%
+    }
+}
+
+@-moz-keyframes ani-mouse {
+    0% {
+        top: 29%
+    }
+    15% {
+        top: 50%
+    }
+    50% {
+        top: 50%
+    }
+    100% {
+        top: 29%
+    }
+}
+
+#mouse-scroll {
+    position: absolute !important;
+    bottom: 40px;
+    width: 75%;
+}
+
+.mouse {
+    border: solid 3px #ffffff;
+    border-radius: 16px;
+    display: block;
+    margin: auto;
+    height: 34px;
+    position: relative;
+    width: 25px;
+}
+
+.mouse .wheel {
+    background: #afacac;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 5px;
+    -webkit-animation: ani-mouse 2s linear infinite;
+    -moz-animation: ani-mouse 2s linear infinite;
+    animation: ani-mouse 2s ease-out infinite;
+}
+
+/* Taken from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+
+#return-to-top {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #b22222;
+    /* Set a background color */
+    color: #ffffff;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#return-to-top:hover {
+    background-color: #555555;
+}
