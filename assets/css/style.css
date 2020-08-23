@@ -129,43 +129,44 @@ main {
     align-items: center;
 } */
 
-#education, #experiences {
+#education, #experiences, #projects {
     display: flex;
     flex-direction: column;
-    width: 75%;
-    min-width: 75%;
+    width: 80%;
+    min-width: 80%;
 }
 
-.education-entries, .experience-entries {
+.education-entries, .experience-entries, .projects {
     display: grid;
     grid-template-columns: auto auto;
 }
 
-.education-entry, .experience-entry {
+.education-entry, .experience-entry, .project-grid {
     background-color: rgba(178, 34, 34,.4);
     color: #f3f3f3;
-    padding: 1.2rem;
+    padding: .9rem;
     border-radius: 1.2rem;
-    margin: .6rem;
+    margin: .5rem;
 }
 
-.education-entry > .education-entry-college, .experience-entry > .experience-entry-title {
-    font-size: 1.65rem;
-    
+.education-entry > .education-entry-college, .experience-entry > .experience-entry-title, .project-grid > .project-name {
+    font-size: 1.45rem;
+    margin-block-start: .5rem;
+    margin-block-end: .5rem;
 }
 
-.education-entry > .education-entry-department, .experience-entry > .experience-entry-place {
-    font-size: 1.25rem;
+.education-entry > .education-entry-department, .experience-entry > .experience-entry-place, .project-grid > .project-lang {
+    font-size: 1.05rem;
     color: #d1d1d1;
 }
 
-.education-entry > .education-entry-date, .experience-entry > .experience-entry-date {
-    font-size: 0.95rem;
+.education-entry > .education-entry-date, .experience-entry > .experience-entry-date, .project-grid > .project-list-item-description{
+    font-size: 0.75rem;
     color: #b1b1b1;
 }
 
 #certificates {
-    padding: 10px;
+    padding: 7px;
 }
 #certificates > table {
     width: 100%;
